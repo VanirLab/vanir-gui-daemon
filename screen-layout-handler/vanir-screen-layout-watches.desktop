@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Vanir screen layout watcher
+Comment=Notifies Vanir VMs about screen layout changes
+Icon=vanir
+Exec=/usr/libexec/vanir/watch-screen-layout-changes vvm-start-gui --notify-monitor-layout --all
+Terminal=false
+Type=Application

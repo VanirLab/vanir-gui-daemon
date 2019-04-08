@@ -1,0 +1,4 @@
+if [ -z "$DISPLAY" ]; then
+    export DISPLAY=:0
+fi
+exec /usr/lib/vanir/icon-receiver

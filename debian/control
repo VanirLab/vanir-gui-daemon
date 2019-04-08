@@ -1,0 +1,50 @@
+Source: vanir-gui-daemon
+Section: admin
+Priority: optional
+Maintainer: Cybertrigo
+Build-Depends:
+ debhelper (>= 10),
+ vanir-gui-common,
+ config-package-dev,
+ libxen-dev,
+ libvchan-xen-dev,
+ python3-dev,
+ libpulse-dev,
+ libxt-dev,
+ libxext-dev,
+ libxrandr-dev,
+ libconfig-dev,
+ libpng-dev,
+ libnotify-dev,
+ libdbus-glib-1-dev,
+ help2man
+Standards-Version: 1.0.0
+Homepage: https://vos.org/
+#Vcs-Browser: https://github.com/VOS/vanir-gui-daemon
+#Vcs-Git: https://github.com/VOS/vanir-gui-daemon.git
+
+Package: vanir-gui-daemon
+Architecture: any
+Depends:
+ python3-xcffib,
+ python3-pydbus,
+ xserver-xorg-core,
+ python3,
+ ${shlibs:Depends},
+ ${misc:Depends}
+Recommends:
+ vanir-gui-daemon-pulseaudio
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: Vanir GUI virtualization (GUI VM side)
+ The Vanir GUI virtualization infrastructure that needs to be installed in GUI
+ VM.
+
+Package: vanir-gui-daemon-pulseaudio
+Architecture: any
+Depends:
+ pulseaudio,
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: Vanir audio virtualization (GUI/Audio VM side)
+ The GUI/Audio VM side of Vanir audio virtualization.

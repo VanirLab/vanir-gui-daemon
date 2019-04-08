@@ -1,0 +1,12 @@
+usr/bin/X.vanir
+usr/bin/vanir-guid
+usr/libexec/vanir/watch-screen-layout-changes
+usr/share/man/man1/vanir-guid.1
+usr/lib/*/vanir-gui-daemon/shmoverride.so
+usr/lib/vanir/icon-receiver
+etc/vanir/guid.conf
+etc/xdg/autostart/vanir-screen-layout-watches.desktop
+etc/vanir-rpc/vanir.WindowIconUpdater
+etc/vanir-rpc/policy/vanir.ClipboardPaste
+etc/vanir-rpc/policy/vanir.WindowIconUpdater
+etc/X11/xinit/xinitrc.d/vanir-localgroup.sh
